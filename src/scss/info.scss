@@ -1,0 +1,22 @@
+.info{
+	background-color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+	h2{
+		flex-basis: 100%;
+		flex-grow: 1;
+	}
+	p{
+		width: 35vw;
+		line-height: 1.5vw;
+		font-size: 1.5vw;
+		font-weight: 100;
+	}
+	img{
+		width: 45vw;
+	}
+}

@@ -1,0 +1,40 @@
+footer {
+	background-color: #bbdff7;
+	line-height: 20px;
+	position: relative;
+	min-height: 10vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	transition: 5s;
+	img{
+		width: 10vw;
+		box-shadow: none;
+	}
+	ul{
+		list-style: none;
+		align-self: baseline;
+	}
+	article{
+		display: flex;
+		flex-direction: column;
+	}
+	h2{
+		font-weight: 200;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	a{
+		color: inherit;
+	}
+}
+footer li{
+	font-weight: 100;
+	font-size: 14px;
+	&:nth-child(n+2):hover{
+		position: relative;
+		transform: scale(1.15);
+		text-shadow: 1px 1px 2px #e44d4d;
+		transition: .7s;
+	}
+}

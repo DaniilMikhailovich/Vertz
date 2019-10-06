@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import "header.scss";
 @import "slider.scss";
+@import "footer.scss";
+@import "contact.scss";
+@import "advantage.scss";
+@import "our-team";
+@import "info";
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #F1F0EC;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -16,4 +22,11 @@ a{
 h2{
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
+}
+
+img{
+    box-shadow: 10px 10px 1px #e2e2e2;
+    border-radius: 5px;
+    // Убрать все лишние бордеры
 }

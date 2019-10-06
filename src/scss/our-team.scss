@@ -1,0 +1,33 @@
+.our-team{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	background-color: #f1f0ec;
+	article{
+		width: 22vw;
+	}
+	figure{
+		text-align: center;
+	}
+	h2{
+		margin: 7vw 0;
+		flex-basis: 100%;
+		flex-grow: 1;
+		text-align: center;
+	}
+	span{
+		display: block;
+		font-size: 1.5vw;
+	}
+	img{
+		box-shadow: none;
+		border-radius: 50%;
+		width: 100%;
+		margin-bottom: 0.8vw;
+		border: 0.15vw solid #ea4b14;
+	}
+	figcaption{
+		margin-bottom: 10vw;
+	}
+}

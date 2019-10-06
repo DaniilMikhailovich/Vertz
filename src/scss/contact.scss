@@ -1,0 +1,22 @@
+.contact{
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	h2{
+		flex-grow: 1;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	iframe{
+		box-shadow: 3px 3px 10px #000;
+	}
+	a{
+		color: inherit;
+	}
+}
+.phone, .email{
+	display: flex;
+	flex-direction: column;
+}
