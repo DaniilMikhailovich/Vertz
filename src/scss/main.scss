@@ -1,4 +1,19 @@
-@import "h1.scss";
-h1 {
-    font-size: 30vw;
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import "header.scss";
+@import "slider.scss";
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F0EC;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    outline-color: #EA4B14;
+}
+h2{
+    margin: 0;
+    padding: 0;
 }
