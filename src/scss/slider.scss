@@ -1,3 +1,7 @@
+.slider-section {
+    background: #F1F0EC;
+}
+
 .slider {
     width: 80%;
     height: 30vw;
@@ -36,14 +40,14 @@
 }
 
 .slide {
-    opacity: 0.3;
+    opacity: 0.2;
     min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     height: 100%;
-    transition: 0.9s transform, 1s opacity;
+    transition: 1s ease-in-out transform, 0.2s ease-out opacity;
 }
 
 .slide1 {
@@ -64,7 +68,7 @@
 }
 
 .slideActive {
-    opacity: 1;
+    opacity: 1 !important;
     margin-right: 5vw;
     margin-left: 5vw;
 }

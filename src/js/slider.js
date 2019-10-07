@@ -37,9 +37,31 @@ document.addEventListener('DOMContentLoaded', function(){
         navs[prev].classList.remove('sn_itemActive');
         navs[active].classList.add('sn_itemActive');
         for (var i=0; i<slides.length; i++){
-            slides[i].style.transform = 'translate(calc('+-(active*100)+'% - 5vw))';
-            i==slides.length ? slide1.style.transform = 'translate(calc(100% - 5vw))' : slide1.style.transform = 'translate(calc('+-(active*100)+'% - 5vw))'; 
+            slides[i].style.transform = 'translate(calc('+-(active*100)+'% - 5vw))'; 
+            slides[i].style.opacity = '0.3';
+            
+            if (active == slides.length-2){
+                slides[0].style.transform = 'translate(calc(100% + 5vw))';
+                slides[0].style.opacity = '0';
+            }
+
+            if (active == slides.length-1) {
+                slides[i].style.transform = 'translate(calc(100% + 5vw))';
+                slides[i].style.opacity = '0';
+                slides[0].style.opacity = '0.3';
+                slides[slides.length-1].style.transform = 'translate(calc('+-(active*100)+'% - 5vw))';
+                slides[slides.length-2].style.transform = 'translate(calc('+-(active*100)+'% - 5vw))';
+                slides[slides.length-2].style.opacity = '0.3';
+            }
+            if (active == 0) {
+                slides[slides.length-1].style.transform = 'translate(calc('+-(slides.length*100)+'% - 15vw))';
+                slides[slides.length-2].style.opacity = '0';
+            }
+            if (active == 1) {
+                slides[slides.length-1].style.opacity = '0';
+            }
         }
+        
     }
             
     function getNewTimer() {
@@ -47,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function(){
             prev = active;
             active+1 <= slides.length-1 ? ++active : active = 0;
             changeActiveSlide(prev);
-        }, 3500);
+        }, 2500);
     }
     slider.onmouseover = function() {
         clearTimeout(changeTimer);
